@@ -1,0 +1,50 @@
+#top { /* Шапка с заголовком страницы */
+    background: #ffaf01; /* Цвет фона */
+    height: 40px;
+}
+#container {
+    border-left: 200px solid #07bbdb;
+    height:500px
+}
+#rectangle1 { /* Левая колонка */ 
+    float: left;
+    position: absolute; /* Абсолютное позиционирование */
+    width: 160px; /* Ширина слоя */
+    height: 40px;
+    left: 20px; /* Положение от левого края окна */ 
+    top:60px;
+    background: #ffaf01; /* Цвет фона левой колонки */
+}
+#rectangle2 { /* Левая колонка */ 
+    float: left;
+    position: absolute; /* Абсолютное позиционирование */
+    width: 160px; /* Ширина слоя */
+    height: 40px;
+    left: 20px; /* Положение от левого края окна */ 
+    top:120px;
+    background: #ff01ea; /* Цвет фона левой колонки */
+}
+#rectangle3 { /* Левая колонка */ 
+    float: left;
+    position: absolute; /* Абсолютное позиционирование */
+    width: 160px; /* Ширина слоя */
+    height: 40px;
+    left: 20px; /* Положение от левого края окна */ 
+    top:180px;
+    background: #b6bba2; /* Цвет фона левой колонки */
+}
+
+#mainField { /* Правая колонка */ 
+    background: #eeff00; /* Цвет фона правой колонки */
+    height:460px
+}
+body {
+    padding: 0; /* Отступы для браузера Opera */ 
+    margin: 0; /* Обнуляем значения отступов на веб-странице */ 
+   }
+#bottom { /* Подвал */
+    background: #175e02; /* Цвет фона */
+    height: 40px;
+}
+
+

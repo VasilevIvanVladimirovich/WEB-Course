@@ -1,0 +1,29 @@
+#top { /* Шапка с заголовком страницы */
+    background: #e3e8cc; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки  */
+    padding: 10px 0 10px 10px; /* Поля вокруг текста */
+    margin-bottom: 5px; /* Расстояние между шапкой и колонками */
+    font-size: 24px; /* Размер шрифта */
+    font-weight: bold; /* Жирное начертание */
+}
+#menu { /* Меню сайта */
+    width: 20%; /* Ширина меню */
+    background: #e3e8cc; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки */
+    float: right; /* Состыковка со слоем контента по горизонтали */
+    padding: 3px; /* Внутренние поля */
+}
+#content { /* Основное содержание */
+    background: #e3e8cc; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки */
+    margin-right: 21%; /* Отступ слева с учетом ширины левой колонки */
+    margin-bottom: 5px /* Отступ снизу */
+}
+#content p{
+	padding: 3px; /* Внутренние поля контента*/
+}
+#bottom { /* Подвал */
+    background: #e3e8cc; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки */
+    padding: 3px; /* Поля вокруг текста */
+}
