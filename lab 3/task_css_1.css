@@ -1,0 +1,92 @@
+#top { /* Шапка с заголовком страницы */
+    background: #e3e8cc; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки  */
+    padding: 10px 0 10px 10px; /* Поля вокруг текста */
+    margin-bottom: 5px; /* Расстояние между шапкой и колонками */
+    font-size: 24px; /* Размер шрифта */
+    font-weight: bold; /* Жирное начертание */
+}
+#container {
+    border-left: 200px solid #e3e8cc;
+    min-height: 150px;
+}
+#col1 { /* Левая колонка */ 
+
+    display: inline-block;
+    position: absolute;  /*Абсолютное позиционирование */
+    width: 190px; /* Ширина слоя */
+    left: 0px; /* Положение от левого края окна */ 
+    margin-left: -200px;  /*внешний левый отступ отрицательного значения */
+    padding-left: 200px;  /*внутренне левое поле */
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    background: #e3e8cc; /* Цвет фона левой колонки */
+}
+
+#col2 { /* Правая колонка */ 
+    min-height: 150px;
+    background: #e0e0e0; /* Цвет фона правой колонки */
+    padding: 5px; /* Поля вокруг текста */
+}
+body {
+    padding: 0; /* Отступы для браузера Opera */ 
+    margin: 0; /* Обнуляем значения отступов на веб-странице */ 
+   }
+#bottom { /* Подвал */
+    background: #e3e8cc; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки */
+    padding: 3px; /* Поля вокруг текста */
+    clear:both;
+}
+.radString{
+    text-indent: 25px;
+    margin:0px; 
+}
+h1{
+    text-align: center;
+}
+h2{
+    font-size: 15px;
+    font-weight: 100;
+}
+.reset{
+
+    margin: 0;
+    border:0;
+}
+#centerText{
+    text-align: center;
+}
+
+#leftText{
+    display: inline-block;
+    text-align: left;
+}
+
+
+input:focus {  /*Выбраный элемент*/
+    background: rgb(255, 251, 0); /* Цвет фона */ 
+    border: 1px solid #29B0D9; /* Параметры рамки */ 
+    }
+    
+input:required { /*Поле должно быть заполненно*/
+        border: 1px solid red; /* Красная рамка для обязательных полей */
+}
+            
+input:valid {  /*Корректные значения*/
+    background: rgb(0, 228, 0); /* Зеленый цвет фона */ 
+}
+input:optional { /*Для тех, кто без required*/
+    background-color: khaki; 
+    }
+input:checked { /* псевдокласс :checked выбирает элементы input с атрибутом checked*/
+    width: 25px; /* устанавливает ширину если элемент выбран */
+    height: 25px; /* устанавливает высоту если элемент выбран */
+    transition: .5s; /* устанавливаем эффект перехода (высота и ширина элемента будет изменяться пол секунды) */
+        }
+input:not(:checked) { /* псевдокласс отрицания :not  выбирает все элементы input без атрибута checked (которые не выбрал псевдокласс :checked) */
+    transition: .5s; /* устанавливаем эффект перехода (высота и ширина элемента будет изменяться пол секунды) */
+}
+q:lang(ru) { /* Вид кавычек для русского и французского языка */ 
+    quotes: "\00AB" "\00BB"; 
+   }

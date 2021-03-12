@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task_css_1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="top">Лабораторная работа №2</div>
+    <div id="container">
+        <div id="col1">
+            <p>
+                <a href="task_1_index.html">Главная страница</a> <br>
+                <a href="task_1_text1.html">Яndex: система русского поиска Internet/Intranet</a> <br>
+                <a href="task_1_text2.html">Информация - вот основа Internet!</a> <br>
+                <a href="task_1_forms.html">Forms</a> <br>
+            </p>
+        </div>
+        <div id="col2">
+            <FORM name="contact_form" method="post" action="check2.html">
+
+                <H1>Введите ваши данные.</H1>
+                <p>
+                    <label for="firstname">Имя</label>
+                    <input type="text" id="firstname" name="firstname" inputmode="latin-name"
+                        pattern="^[A-Za-zА-Яа-яЁё]+$" title="Введите ваше имя" placeholder="first name" required
+                        maxlength="20" />
+                </p>
+                <p>
+                    <label for="lastname">Фамилия</label>
+                    <input type="text" id="lastname" name="lastname" pattern="^[A-Za-zА-Яа-яЁё]+$"
+                        placeholder="last name" title="Введите фашу фамилию" required maxlength="20" />
+                </p>
+
+                <P>Ваш пол: <INPUT type="radio" name="gender" value="Male" title="Выберете ваш пол" required> Мужской
+                    &nbsp; <INPUT type="radio" name="gender" value="Female" title="Выберете ваш пол" required> Женский
+                </P>
+
+                <P>Ваш возраст:
+
+                    <SELECT name="age" title="Выберете ваш возраст">
+                        <OPTION value="">Выберите одну из опций:</OPTION>
+                        <OPTION value="0-18 years">0-18 лет</OPTION>
+                        <OPTION value="18-30 years">18-30 лет</OPTION>
+                        <OPTION value="30-45 years">30-45 лет</OPTION>
+                        <OPTION value="45-60 years">45-60 лет</OPTION>
+                        <OPTION value="60+ years">60+ лет</OPTION>
+                    </SELECT>
+                </p>
+                <p>
+                    <label for="email">Email адрес</label>
+                    <input type="email" id="email" name="email" pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)"
+                        placeholder=your@email.address title="Введите ваш адрес эл. почты" required maxlength="50" />
+                </p>
+                <p>
+                    <label for="tel">Номер телефона</label>
+                    <input type="tel" id="tel" name="tel" placeholder=89116294490 title="Введите ваш номер телефона"
+                        pattern="[0-9]{11}" required />
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="newsletter" title="Подписаться на ежемесячную рассылку" />
+                        Подпишитесь на рассылку
+                    </label>
+                </p>
+
+                </P>
+                <P><input type="submit" name="send" value="Отправить данные" required></P>
+            </FORM>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div id="bottom">
+        Подвал
+    </div>
+
+
+</body>
+
+</html>
