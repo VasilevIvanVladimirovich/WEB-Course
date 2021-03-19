@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task1.css">
+    <title>Document</title>
+    <script src="js.js"></script>
+</head>
+<body>
+    <div id="top">Лабораторная работа №3</div>
+    <div id="col">
+    <form name= "Form" action="login_form" id="form">
+        <div class="field">
+        <H1>Регистрация</H1>
+        <div class="field">
+        <p>
+            <label for="name">Логин</label>
+            <input type="text" id="name" name="name" inputmode="latin-name" placeholder="Your name" required/>
+        </p>
+        <p>
+            <label for="pass">Пароль</label>
+            <input type="password" name="pasw1" id="pass" inputmode="latin-name" placeholder="Your password" onFocus="select();" required>
+        </p>
+        <p>
+            <label for="pass2">Повторите пароль</label>
+            <input type="password" name="pasw2" id="pass2" inputmode="latin-name" placeholder="Your entered password" onFocus="select();" required>
+            <div id="control"></div>
+        </p>
+
+            <p>
+                <input type="button" name="btm"value="Отправить данные" onclick="Compl();"  required >
+            </p>
+        </div>
+        </div>
+    </form>
+    </div>
+    <div id="bottom">
+        Подвал
+    </div>
+</body>
+</html>
