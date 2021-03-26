@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
 </head>
 <body>
+
 <div class="conteiner">
     <div class="header">
         <h1>Мой первый сайт!</h1>
     </div>
     <div class="nav">
         <ul class="menu">
-            <li><a href="index.html">Главная страница</a></li>
-            <li><a href="text1.html">Яndex: система русского поиска Internet/Intranet</a></li>
-            <li><a href="text2.html">Информация - вот основа Internet!</a></li>
-            <li><a href="Registr.html">Регистрация</a></li>
+            <li>Разделы</a>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="text1.html">Яndex</a></li>
+                <li><a href="text2.html">Информация</a></li>
+            </ul>
+            </li>
+            <li><a onclick="showModalWin()">Регистрация</a></li>
 
         </ul>
     </div>
@@ -28,10 +34,55 @@
             оформление html-документа Использование CSS рекомендовано к применению WWW-консорциумом.
         </p>
         <p><img src="./img/sunflower_PNG13405.png" alt="Цветочек" width="200px" height="200px"></p>
-    </div>
-    <div class="footer"></div>
+    </div><div class="footer"></div>
+
 </div>
 
+</div>
+<div style="text-align: center" id="popupWin" class="modalwin">
+    <h2> Регистрация </h2>
+    <form name="FormShadow">
+        <table class="TableForm">
+            <tr>
+                <td>Ведите логин</td>
+                <td><input type="text" name="Login" placeholder="Name"  pattern="^[A-Za-zА-Яа-яЁё]+$" required></td>
+            </tr>
+            <tr>
+                <td>Ведите почту</td>
+                <td><input type="text" name="Email" placeholder="example@mail.com" pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)" required></td>
+            </tr>
+            <tr>
+                <td>Ведите пароль</td>
+                <td><input type="password" name="Pass1" placeholder="password" onfocus="this.select()" required></td>
+            </tr>
+            <tr>
+                <td>Повторите пароль</td>
+                <td><input type="password" name="Pass2" placeholder="password" onfocus="this.select()" required></td>
+            </tr>
+
+            <tr>
+                <td>Номер телефона</td>
+                <td><input type="tel" id="tel" name="tel" placeholder=89116294490 title="Введите ваш номер телефона"
+                           pattern="[0-9]{11}" required /></td>
+            </tr>
+            <tr>
+                <td>Ваш возраст:</td>
+                <td> <SELECT name="age" title="Выберете ваш возраст">
+                    <OPTION value="">Выберите одну из опций:</OPTION>
+                    <OPTION value="0-18 years">0-18 лет</OPTION>
+                    <OPTION value="18-30 years">18-30 лет</OPTION>
+                    <OPTION value="30-45 years">30-45 лет</OPTION>
+                    <OPTION value="45-60 years">45-60 лет</OPTION>
+                    <OPTION value="60+ years">60+ лет</OPTION>
+                </SELECT></td>
+            </tr>
+            <tr>
+                <td><input class="CheckPass" type="button" value="Отправить" name="Submit" placeholder="password" onclick="Complete()"></td>
+                <td><input class="CheckPass" type="reset" value="Стереть" name="Reset" placeholder="password" required></td>
+            </tr>
+        </table>
+
+    </form>
 </div>
 </body>
 </html>
