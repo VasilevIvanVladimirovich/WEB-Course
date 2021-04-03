@@ -13,11 +13,7 @@ function showModalWin() {
 
 function Complete()
 {
-    if(document.FormShadow.Pass1.value==document.FormShadow.Pass2.value )
-    {
-        alert("Пароль правильный");
-    }
-    else
+    if(document.FormShadow.Pass1.value!==document.FormShadow.Pass2.value )
     {
         document.FormShadow.Pass1.style.borderColor = "red";
         document.FormShadow.Pass2.style.borderColor = "red";

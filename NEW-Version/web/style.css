@@ -134,5 +134,5 @@ input:valid { /*Поле должно быть заполненно*/
     border: 1px solid green; /* Красная рамка для обязательных полей */
 }
 input:invalid {  /*Корректные значения*/
-   border: 2px solid red; /* Зеленый цвет фона */
+   border: 2px solid #95E1D3 /* Зеленый цвет фона */
 }
