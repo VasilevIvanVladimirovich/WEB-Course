@@ -15,8 +15,9 @@ function Complete()
 {
     if(document.FormShadow.Pass1.value!==document.FormShadow.Pass2.value )
     {
-        document.FormShadow.Pass1.style.borderColor = "red";
-        document.FormShadow.Pass2.style.borderColor = "red";
         alert("Ошибка ввода пароля");
+        return false;
     }
+    alert("Регистрация прошла успешно");
+    return true;
 }

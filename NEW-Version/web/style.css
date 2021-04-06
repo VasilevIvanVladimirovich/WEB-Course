@@ -136,3 +136,7 @@ input:valid { /*Поле должно быть заполненно*/
 input:invalid {  /*Корректные значения*/
    border: 2px solid #95E1D3 /* Зеленый цвет фона */
 }
+
+td {
+    text-align: left;
+}

@@ -41,7 +41,7 @@
 </div>
 <div style="text-align: center" id="popupWin" class="modalwin">
     <h2> Регистрация </h2>
-    <form name="FormShadow">
+    <form name="FormShadow" onsubmit="return Complete()" method="post">
         <table class="TableForm">
             <tr>
                 <td>Ведите логин</td>
@@ -68,7 +68,7 @@
             <tr>
                 <td>Ваш возраст:</td>
                 <td> <SELECT name="age" title="Выберете ваш возраст">
-                    <OPTION value="">Выберите одну из опций:</OPTION>
+                    <OPTION value="">Выберите одну из опций</OPTION>
                     <OPTION value="0-18 years">0-18 лет</OPTION>
                     <OPTION value="18-30 years">18-30 лет</OPTION>
                     <OPTION value="30-45 years">30-45 лет</OPTION>
@@ -77,7 +77,7 @@
                 </SELECT></td>
             </tr>
             <tr>
-                <td><input class="CheckPass" type="submit" value="Отправить" name="Submit" placeholder="password" onclick="Complete()"></td>
+                <td><input class="CheckPass" type="submit" value="Отправить" name="Submit" placeholder="password" ></td>
                 <td><input class="CheckPass" type="reset" value="Стереть" name="Reset" placeholder="password" required></td>
             </tr>
         </table>
