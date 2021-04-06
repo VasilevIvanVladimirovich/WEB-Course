@@ -31,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -55,8 +55,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.basket.html">
     <configuration name="Registr.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/web/Registr.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="basket.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web/basket.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="check.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web/check.html" useBuiltInWebServerPort="true">
@@ -67,6 +70,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.basket.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.check.html" />
       </list>
@@ -84,7 +88,7 @@
       <workItem from="1616764783967" duration="13685000" />
       <workItem from="1616830516291" duration="1750000" />
       <workItem from="1617352609099" duration="76000" />
-      <workItem from="1617693166836" duration="17179000" />
+      <workItem from="1617693166836" duration="24815000" />
     </task>
     <servers />
   </component>

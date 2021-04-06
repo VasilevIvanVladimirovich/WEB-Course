@@ -32,6 +32,7 @@ function Complete()
         alert("Ошибка ввода пароля");
         return false;
     }
+    save_username_acc();
     alert("Регистрация прошла успешно");
     return true;
 }

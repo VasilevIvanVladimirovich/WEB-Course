@@ -6,24 +6,24 @@
     <link rel="stylesheet" href="style.css">
     <script src="js.js"></script>
     <script src="Coockie.js"></script>
+    <script src="LocalStorage.js"></script>
 </head>
 <body onload="readCookiePlace()">
 <div class="conteiner">
     <div class="header">
-
         <h1>Мой первый сайт!</h1>
     </div>
     <div class="nav">
         <div class="left">
-        <ul class="menu">
+            <ul class="menu">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="text1.html">Яndex</a></li>
                 <li><a href="text2.html">Информация</a></li>
-            </li>
-        </ul>
+                </li>
+            </ul>
         </div>
-    <div class="right" id="logout">
-    </div>
+        <div class="right" id="logout">
+        </div>
     </div>
     <div class="main">
         <h1>Главная страница</h1>
@@ -34,7 +34,8 @@
             оформление html-документа Использование CSS рекомендовано к применению WWW-консорциумом.
         </p>
         <p><img src="./img/sunflower_PNG13405.png" alt="Цветочек" width="200px" height="200px"></p>
-    </div><div class="footer"></div>
+    </div>
+    <div class="footer"></div>
 
 </div>
 
@@ -45,11 +46,12 @@
         <table class="TableForm">
             <tr>
                 <td>Ведите логин</td>
-                <td><input type="text" name="Login" placeholder="Name"  pattern="^[A-Za-zА-Яа-яЁё]+$" required></td>
+                <td><input type="text" name="Login" placeholder="Name" pattern="^[A-Za-zА-Яа-яЁё]+$" required></td>
             </tr>
             <tr>
                 <td>Ведите почту</td>
-                <td><input type="text" name="Email" placeholder="example@mail.com" pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)" required></td>
+                <td><input type="text" name="Email" placeholder="example@mail.com"
+                           pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)" required></td>
             </tr>
             <tr>
                 <td>Ведите пароль</td>
@@ -63,11 +65,11 @@
             <tr>
                 <td>Номер телефона</td>
                 <td><input type="tel" id="tel" name="tel" placeholder=89116294490 title="Введите ваш номер телефона"
-                           pattern="[0-9]{11}" required /></td>
+                           pattern="[0-9]{11}" required/></td>
             </tr>
             <tr>
                 <td>Ваш возраст:</td>
-                <td> <SELECT name="age" title="Выберете ваш возраст">
+                <td><SELECT name="age" title="Выберете ваш возраст">
                     <OPTION value="">Выберите одну из опций</OPTION>
                     <OPTION value="0-18 years">0-18 лет</OPTION>
                     <OPTION value="18-30 years">18-30 лет</OPTION>
@@ -78,7 +80,8 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input class="CheckPass" type="submit" value="Отправить" name="Submit" onclick="window.location.reload()" >
+                <td><input class="CheckPass" type="submit" value="Отправить" name="Submit"
+                           onclick="window.location.reload();">
                     <input class="CheckPass" type="reset" value="Стереть" name="Reset" placeholder="password" required>
                 </td>
             </tr>
@@ -86,25 +89,26 @@
 
     </form>
 </div>
-    <div style="text-align: center" id="popupWin2" class="modalwin">
-        <h2> Логин </h2>
-    <form name="FormShadow2" method="post">
+<div style="text-align: center" id="popupWin2" class="modalwin">
+    <h2> Логин </h2>
+    <form name="FormShadow2" method="post" onsubmit="return Check_login()">
         <table class="TableForm">
             <tr>
                 <td>Ведите логин</td>
-                <td><input type="text" name="Login" placeholder="Name"  pattern="^[A-Za-zА-Яа-яЁё]+$" required></td>
+                <td><input type="text" name="Login" placeholder="Name" pattern="^[A-Za-zА-Яа-яЁё]+$" required></td>
             </tr>
             <tr>
                 <td>Ведите пароль</td>
                 <td><input type="password" name="Pas" placeholder="password" onfocus="this.select()" required></td>
             </tr>
-                <td></td>
-                <td><input class="CheckPass" type="submit" value="Войти" name="Войти" onClick="writeCookie('Login', Login.value,1); writeCookie('PWD', Pas.value,1);window.location.reload()">
-                    <input class="CheckPass" type="reset" value="Стереть" name="Reset" required></td>
+            <td></td>
+            <td><input class="CheckPass" type="submit" value="Войти" name="Войти"
+                       onClick="Check_login()">
+                <input class="CheckPass" type="reset" value="Стереть" name="Reset" required></td>
             </tr>
         </table>
     </form>
-    </div>
+</div>
 </div>
 </body>
 </html>

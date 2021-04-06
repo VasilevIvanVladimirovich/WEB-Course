@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="js.js"></script>
     <script src="Coockie.js"></script>
+    <script src="LocalStorage.js"></script>
 </head>
 <body onload="readCookiePlace()">
 <div class="conteiner">
@@ -83,11 +84,12 @@
         <table class="TableForm">
             <tr>
                 <td>Ведите логин</td>
-                <td><input type="text" name="Login" placeholder="Name"  pattern="^[A-Za-zА-Яа-яЁё]+$" required></td>
+                <td><input type="text" name="Login" placeholder="Name" pattern="^[A-Za-zА-Яа-яЁё]+$" required></td>
             </tr>
             <tr>
                 <td>Ведите почту</td>
-                <td><input type="text" name="Email" placeholder="example@mail.com" pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)" required></td>
+                <td><input type="text" name="Email" placeholder="example@mail.com"
+                           pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)" required></td>
             </tr>
             <tr>
                 <td>Ведите пароль</td>
@@ -101,11 +103,11 @@
             <tr>
                 <td>Номер телефона</td>
                 <td><input type="tel" id="tel" name="tel" placeholder=89116294490 title="Введите ваш номер телефона"
-                           pattern="[0-9]{11}" required /></td>
+                           pattern="[0-9]{11}" required/></td>
             </tr>
             <tr>
                 <td>Ваш возраст:</td>
-                <td> <SELECT name="age" title="Выберете ваш возраст">
+                <td><SELECT name="age" title="Выберете ваш возраст">
                     <OPTION value="">Выберите одну из опций</OPTION>
                     <OPTION value="0-18 years">0-18 лет</OPTION>
                     <OPTION value="18-30 years">18-30 лет</OPTION>
@@ -115,8 +117,11 @@
                 </SELECT></td>
             </tr>
             <tr>
-                <td><input class="CheckPass" type="submit" value="Отправить" name="Submit" placeholder="password" ></td>
-                <td><input class="CheckPass" type="reset" value="Стереть" name="Reset" placeholder="password" required></td>
+                <td></td>
+                <td><input class="CheckPass" type="submit" value="Отправить" name="Submit"
+                           onclick="save_username_acc();window.location.reload();">
+                    <input class="CheckPass" type="reset" value="Стереть" name="Reset" placeholder="password" required>
+                </td>
             </tr>
         </table>
 
@@ -124,19 +129,20 @@
 </div>
 <div style="text-align: center" id="popupWin2" class="modalwin">
     <h2> Логин </h2>
-    <form name="FormShadow2" method="post">
+    <form name="FormShadow2" method="post" onsubmit="return Check_login()">
         <table class="TableForm">
             <tr>
                 <td>Ведите логин</td>
-                <td><input type="text" name="Login" placeholder="Name"  pattern="^[A-Za-zА-Яа-яЁё]+$" required></td>
+                <td><input type="text" name="Login" placeholder="Name" pattern="^[A-Za-zА-Яа-яЁё]+$" required></td>
             </tr>
             <tr>
                 <td>Ведите пароль</td>
-                <td><input type="password" name="Pass1" placeholder="password" onfocus="this.select()" required></td>
+                <td><input type="password" name="Pas" placeholder="password" onfocus="this.select()" required></td>
             </tr>
             <td></td>
-            <td><input class="CheckPass" type="submit" value="Отправить" name="Submit" placeholder="password">
-                <input class="CheckPass" type="reset" value="Стереть" name="Reset" placeholder="password" required></td>
+            <td><input class="CheckPass" type="submit" value="Войти" name="Войти"
+                       onClick="Check_login()">
+                <input class="CheckPass" type="reset" value="Стереть" name="Reset" required></td>
             </tr>
         </table>
     </form>
