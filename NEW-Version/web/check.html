@@ -1,14 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script>
 
+        function writeCookie(name, value, days) {
+            // По умолчанию куки являются временными, не имея срока хранения
+
+            var expires = "";
+
+            // Указав число дней, сделаем куки постоянными
+            if(days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toGMTString();
+            }
+
+            // Присвоим куки имя, значение и срок хранения
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
+
+        function readCookie(name) {
+            // Найдем конкретный куки и вернем его значение
+
+            var searchName = name + "=";
+            var cookies = document.cookie.split(';');
+            for(var i = 0; i < cookies.length; i++) {
+                var c = cookies[i];
+                while (c.charAt(0) == ' ')
+                    c = c.substring(1, c.length);
+                if(c.indexOf(searchName) == 0)
+                    return c.substring(searchName.length, c.length);
+            }
+            return null;
+        }
+        function readCookiePlace() {
+            var log=readCookie('Login');
+            var pw=readCookie('PWD');
+
+            document.getElementById('place').innerHTML="<HR/>"+
+                "Login: " + log + "<BR/>"+ "Password: " + pw +"<HR/>";
+
+        }
+        //Функция "удаляет" куки из браузера посредством установки срока хранения
+        // на одну секунду раньше текущего значения времени.
+        function delete_cookie ( cookie_name )
+        {
+            var cookie_date = new Date ( );  // Текущая дата и время
+            cookie_date.setTime ( cookie_date.getTime() - 1 );
+            document.cookie = cookie_name += "=; expires=" + cookie_date.toGMTString();
+        }
+        //-->
+    </script>
 </head>
-<body>
-<div class="header">header</div>
-<div class="content">content</div>
-<div class="content">content2</div>
-<div class="footer">footer</div>
+<body onload="readCookiePlace()">
+
+<FORM NAME="Sel1">
+    <TABLE>
+        <TR><TD>Login:</TD>
+            <TD><INPUT NAME="Login" SIZE=20 ></TD></TR>
+        <TR><TD>Password:</TD>
+            <TD><INPUT NAME="Pas" SIZE=20 ></TD></TR>
+    </TABLE>
+    <!-- Кнопки готовности и сброса -->
+    <INPUT TYPE="button" VALUE="Запомнить" onClick="writeCookie('Login', Login.value,1); writeCookie('PWD', Pas.value,1); ">
+    <INPUT TYPE="button" VALUE="Вспомнить" onClick="alert('login='+  readCookie('Login') +'  password=' +readCookie('PWD'));">
+    <INPUT TYPE="button" VALUE="Вывести в div c id=place" onClick="readCookiePlace();">
+    <INPUT TYPE="reset" VALUE="Сброс" >
+</FORM>
+<div id="place"></div>
 </body>
 </html>

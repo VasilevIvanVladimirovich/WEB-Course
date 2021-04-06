@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <script src="Coockie.js"></script>
 </head>
-<body>
+<body onload="readCookiePlace()">
 <div class="conteiner">
     <div class="header">
         <h1>Мой первый сайт!</h1>
     </div>
     <div class="nav">
-        <ul class="menu">
-            <li>Разделы</a>
-                <ul>
-                    <li><a href="index.html">Главная</li>
-                    <li><a href="text1.html">Яndex</a></li>
-                    <li><a href="text2.html">Информация</a></li>
-                </ul>
-            </li>
-            <li><a href="Registr.html">Регистрация</a></li>
+        <div class="left">
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="text1.html">Яndex</a></li>
+                <li><a href="text2.html">Информация</a></li>
+                </li>
+            </ul>
+        </div>
 
-        </ul>
+        <div class="right" id="logout">
+
+        </div>
     </div>
     <div class="main">
     <h1>Яndex: система русского поиска Internet/Intranet</h1>
@@ -211,6 +214,71 @@
     (Яndex), так и возможности иерархическое гипертекстовое представление текстов.
 </p>
     </div>
+</div>
+<div style="text-align: center" id="popupWin" class="modalwin">
+    <h2> Регистрация </h2>
+    <form name="FormShadow" onsubmit="return Complete()" method="post">
+        <table class="TableForm">
+            <tr>
+                <td>Ведите логин</td>
+                <td><input type="text" name="Login" placeholder="Name"  pattern="^[A-Za-zА-Яа-яЁё]+$" required></td>
+            </tr>
+            <tr>
+                <td>Ведите почту</td>
+                <td><input type="text" name="Email" placeholder="example@mail.com" pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)" required></td>
+            </tr>
+            <tr>
+                <td>Ведите пароль</td>
+                <td><input type="password" name="Pass1" placeholder="password" onfocus="this.select()" required></td>
+            </tr>
+            <tr>
+                <td>Повторите пароль</td>
+                <td><input type="password" name="Pass2" placeholder="password" onfocus="this.select()" required></td>
+            </tr>
+
+            <tr>
+                <td>Номер телефона</td>
+                <td><input type="tel" id="tel" name="tel" placeholder=89116294490 title="Введите ваш номер телефона"
+                           pattern="[0-9]{11}" required /></td>
+            </tr>
+            <tr>
+                <td>Ваш возраст:</td>
+                <td> <SELECT name="age" title="Выберете ваш возраст">
+                    <OPTION value="">Выберите одну из опций</OPTION>
+                    <OPTION value="0-18 years">0-18 лет</OPTION>
+                    <OPTION value="18-30 years">18-30 лет</OPTION>
+                    <OPTION value="30-45 years">30-45 лет</OPTION>
+                    <OPTION value="45-60 years">45-60 лет</OPTION>
+                    <OPTION value="60+ years">60+ лет</OPTION>
+                </SELECT></td>
+            </tr>
+            <tr>
+                <td><input class="CheckPass" type="submit" value="Отправить" name="Submit" placeholder="password" ></td>
+                <td><input class="CheckPass" type="reset" value="Стереть" name="Reset" placeholder="password" required></td>
+            </tr>
+        </table>
+
+    </form>
+</div>
+<div style="text-align: center" id="popupWin2" class="modalwin">
+    <h2> Логин </h2>
+    <form name="FormShadow2" method="post">
+        <table class="TableForm">
+            <tr>
+                <td>Ведите логин</td>
+                <td><input type="text" name="Login" placeholder="Name"  pattern="^[A-Za-zА-Яа-яЁё]+$" required></td>
+            </tr>
+            <tr>
+                <td>Ведите пароль</td>
+                <td><input type="password" name="Pass1" placeholder="password" onfocus="this.select()" required></td>
+            </tr>
+            <td></td>
+            <td><input class="CheckPass" type="submit" value="Отправить" name="Submit" placeholder="password">
+                <input class="CheckPass" type="reset" value="Стереть" name="Reset" placeholder="password" required></td>
+            </tr>
+        </table>
+    </form>
+</div>
 </div>
 <div class="footer"></div>
 </body>

@@ -5,25 +5,25 @@
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
     <script src="js.js"></script>
+    <script src="Coockie.js"></script>
 </head>
-<body>
-
+<body onload="readCookiePlace()">
 <div class="conteiner">
     <div class="header">
+
         <h1>Мой первый сайт!</h1>
     </div>
     <div class="nav">
+        <div class="left">
         <ul class="menu">
-            <li>Разделы</a>
-            <ul>
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="text1.html">Яndex</a></li>
                 <li><a href="text2.html">Информация</a></li>
-            </ul>
             </li>
-            <li><a onclick="showModalWin()">Регистрация</a></li>
-
         </ul>
+        </div>
+    <div class="right" id="logout">
+    </div>
     </div>
     <div class="main">
         <h1>Главная страница</h1>
@@ -77,12 +77,34 @@
                 </SELECT></td>
             </tr>
             <tr>
-                <td><input class="CheckPass" type="submit" value="Отправить" name="Submit" placeholder="password" ></td>
-                <td><input class="CheckPass" type="reset" value="Стереть" name="Reset" placeholder="password" required></td>
+                <td></td>
+                <td><input class="CheckPass" type="submit" value="Отправить" name="Submit" onclick="window.location.reload()" >
+                    <input class="CheckPass" type="reset" value="Стереть" name="Reset" placeholder="password" required>
+                </td>
             </tr>
         </table>
 
     </form>
+</div>
+    <div style="text-align: center" id="popupWin2" class="modalwin">
+        <h2> Логин </h2>
+    <form name="FormShadow2" method="post">
+        <table class="TableForm">
+            <tr>
+                <td>Ведите логин</td>
+                <td><input type="text" name="Login" placeholder="Name"  pattern="^[A-Za-zА-Яа-яЁё]+$" required></td>
+            </tr>
+            <tr>
+                <td>Ведите пароль</td>
+                <td><input type="password" name="Pas" placeholder="password" onfocus="this.select()" required></td>
+            </tr>
+                <td></td>
+                <td><input class="CheckPass" type="submit" value="Войти" name="Войти" onClick="writeCookie('Login', Login.value,1); writeCookie('PWD', Pas.value,1);window.location.reload()">
+                    <input class="CheckPass" type="reset" value="Стереть" name="Reset" required></td>
+            </tr>
+        </table>
+    </form>
+    </div>
 </div>
 </body>
 </html>
