@@ -4,7 +4,7 @@ function writeCookie(name, value, days) {
     var expires = "";
 
     // Указав число дней, сделаем куки постоянными
-    if(days) {
+    if (days) {
         var date = new Date();
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         expires = "; expires=" + date.toGMTString();
@@ -19,26 +19,28 @@ function readCookie(name) {
 
     var searchName = name + "=";
     var cookies = document.cookie.split(';');
-    for(var i = 0; i < cookies.length; i++) {
+    for (var i = 0; i < cookies.length; i++) {
         var c = cookies[i];
         while (c.charAt(0) == ' ')
             c = c.substring(1, c.length);
-        if(c.indexOf(searchName) == 0)
+        if (c.indexOf(searchName) == 0)
             return c.substring(searchName.length, c.length);
     }
     return null;
 }
 
 function readCookiePlace() {
-    let log=readCookie('Login');
-    let ref=document.createElement('a');
-    if(log!=null) {
-        document.getElementById('logout').innerHTML = "<ul>" + "<li>" + "Вы вошли как " + log + "</li>" + "<li>" + '<a onclick="CookiesDelete(); window.location.reload();">' + "Выйти" + "</a>" + "</li>";
-    }else{
-        document.getElementById('logout').innerHTML = "<ul>" + "<li>" +'<a onclick="showModalWin();">' + 'Регистрация' + "</a>"+ "</li>" + "<li>" + '<a onclick="showModalWin2();">' +"Логин"+ "</a>" + "</li>";
+    let log = readCookie('Login');
+    let ref = document.createElement('a');
+    if(getCartData()==null) count = 0;
+    if (log != null) {
+        document.getElementById('logout').innerHTML = "<ul>" + "<li>" + 'Вы вошли как ' + log + " " + '<a href="basket.html">(Корзина)<\a>'+"</li>" + "<li>" + '<a onclick="CookiesDelete(); window.location.reload();">' + "Выйти" + "</a>" + "</li>";
+    } else {
+        document.getElementById('logout').innerHTML = "<ul>" + "<li>" + '<a onclick="showModalWin();">' + 'Регистрация' + "</a>" + "</li>" + "<li>" + '<a onclick="showModalWin2();">' + "Логин" + "</a>" + "</li>";
 
     }
 }
+
 //Функция "удаляет" куки из браузера посредством установки срока хранения
 // на одну секунду раньше текущего значения времени.
 function CookiesDelete() {
