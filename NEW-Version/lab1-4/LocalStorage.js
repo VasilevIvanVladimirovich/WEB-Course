@@ -31,3 +31,8 @@ function Check_login()
     }
 }
 
+function check_local_storage(){
+    if(JSON.parse(localStorage.getItem('cart'))===null)document.getElementById('chek_basket').innerHTML = "Корзина пустая"
+    else document.getElementById('chek_basket').innerHTML = "В корзине есть элементы"
+}
+

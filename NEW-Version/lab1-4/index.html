@@ -7,11 +7,14 @@
     <script src="js.js"></script>
     <script src="Coockie.js"></script>
     <script src="LocalStorage.js"></script>
+    <script src="basket.js"></script>
 </head>
-<body onload="readCookiePlace()">
+<body onload="readCookiePlace(); check_local_storage();">
 <div class="conteiner">
     <div class="header">
         <h1>Мой первый сайт!</h1>
+        <div id="chek_basket">
+        </div>
     </div>
     <div class="nav">
         <div class="left">
