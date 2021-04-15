@@ -52,18 +52,13 @@
     <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" router_script="$PROJECT_DIR$/../../../../Server/wampmanager.exe" use_router_script="true">
       <method v="2" />
     </configuration>
-    <configuration name="check.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/check.php">
+    <configuration name="check.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/check.php">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHPUnit.run" />
       <item itemvalue="PHP Script.check.php" />
+      <item itemvalue="PHPUnit.run" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="PHP Script.check.php" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -74,6 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618040543444</updated>
       <workItem from="1618040545053" duration="9933000" />
+      <workItem from="1618472496421" duration="126000" />
     </task>
     <servers />
   </component>
@@ -90,6 +86,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
