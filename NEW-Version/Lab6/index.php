@@ -1,13 +1,23 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php
-    include("Header.php");
-    include("menu.php");
-    include("content.php");
-    include("footer.php");
-    ?>
+<div class="header">
+    <?php include("Header.php"); ?>
+</div>
+
+<?php include("menu.php"); ?>
+
+<div class="main">
+    <?php include("content-index.php"); ?>
+</div>
+
+<div class="footer">
+    <?php include("footer.php"); ?>
+</div>
 </body>
 </html>

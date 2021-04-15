@@ -1,33 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="main">
-    <h1>Главная страница</h1>
-    <p>Контент. Дизайн CSS две колонки, пожалуй, самый популярный. Создать страницу с таким расположением
-        колонок можно двумя способами, рассмотрим каждый отдельно.
-    </p>
-    <p>С помощью CSS выполняется логическое форматирование html-документа, позволяющее разделить содержание и
-        оформление html-документа Использование CSS рекомендовано к применению WWW-консорциумом.
-    </p>
-</div>
-</body>
-
-
-
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="main">
     <h1>Яndex: система русского поиска Internet/Intranet</h1>
     <div>
         <ul class="jump">
@@ -216,7 +186,3 @@
     </p>
 </div>
 </div>
-</div>
-</body>
-
-?>
