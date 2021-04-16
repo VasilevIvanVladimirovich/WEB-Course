@@ -15,10 +15,6 @@
 </form>
 <h2>Документы</h2>
     <?php
-    function readfile($filename)
-    {
-        readfile($filename);
-    }
     $docdir = "./document";  // каталог для хранения изображений
     $d = opendir($docdir);  // открываем каталог (функция opendir возвращает идентификатор //каталога)
     $document = array(); // сначала альбом пуст
@@ -46,11 +42,12 @@
         if ($tp[1] == "docx") $format = "Word";
         if ($tp[1] == "xlsx") $format = "Exel";
         if ($tp[1] == "pdf") $format = "PDF";
-        $str = $tp[0] . "(формат " . '<a href="readfile({$url})">' . $format . "," . $fl . " kb"."</a>".")";
+        $str = $tp[0] . "(формат " . '<a href="download.php?file='.$name.'">' . $format . "," . $fl . " kb"."</a>".")";
         echo "<ul>
                 <li> {$str} </li>
             </ul>";
     }
+
     ?>
 
 
