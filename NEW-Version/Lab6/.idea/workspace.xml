@@ -14,6 +14,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1rCFhjcgxGJfdtLCqcdk309b2s6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -24,7 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/photoScript.php" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -34,7 +37,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Header" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/Header.php">
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/Header.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP" />
@@ -42,7 +45,7 @@
       </CommandLine>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/Header.php">
+    <configuration name="run" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/photoScript.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP" />
@@ -60,7 +63,8 @@
       <option name="presentableId" value="Default" />
       <updated>1618472296746</updated>
       <workItem from="1618472302283" duration="2525000" />
-      <workItem from="1618510440064" duration="2628000" />
+      <workItem from="1618510440064" duration="3235000" />
+      <workItem from="1618516248982" duration="15202000" />
     </task>
     <servers />
   </component>
