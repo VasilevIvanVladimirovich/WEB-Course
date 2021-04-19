@@ -91,7 +91,3 @@ foreach ($photos as $key => $value) {
 </table>";
 }
 ?>
-
-
-
-

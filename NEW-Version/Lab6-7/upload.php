@@ -1,8 +1,4 @@
 <?php
-if ($_FILES["filename"]["size"] > 1024 * 1024) {
-    echo("Размер файла превышает 1 мегабайт");
-    exit;
-}
 $name = $_FILES["filename"]['name'];
 $format = explode('.', (string)$name);
 if ($format[1] == "jpg" || $format[1] == "png" || $format[1] == "gif") {

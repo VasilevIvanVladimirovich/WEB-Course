@@ -13,6 +13,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
@@ -24,10 +32,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/photoScript.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content-db.php" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -45,7 +54,7 @@
       </CommandLine>
       <method v="2" />
     </configuration>
-    <configuration name="run" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/photoScript.php">
+    <configuration name="run" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/content-db.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP" />
@@ -68,6 +77,11 @@
       <workItem from="1618556783698" duration="2608000" />
       <workItem from="1618590334373" duration="6676000" />
       <workItem from="1618599964082" duration="493000" />
+      <workItem from="1618600676368" duration="27000" />
+      <workItem from="1618643549326" duration="3726000" />
+      <workItem from="1618647331585" duration="15406000" />
+      <workItem from="1618823203714" duration="7608000" />
+      <workItem from="1618854939180" duration="6177000" />
     </task>
     <servers />
   </component>
