@@ -22,9 +22,6 @@
     </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="1rCFhjcgxGJfdtLCqcdk309b2s6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -36,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/content-db.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -82,6 +79,9 @@
       <workItem from="1618647331585" duration="15406000" />
       <workItem from="1618823203714" duration="7608000" />
       <workItem from="1618854939180" duration="6373000" />
+      <workItem from="1618896483501" duration="706000" />
+      <workItem from="1618898158366" duration="551000" />
+      <workItem from="1618903673371" duration="22764000" />
     </task>
     <servers />
   </component>

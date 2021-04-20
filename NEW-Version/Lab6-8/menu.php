@@ -18,10 +18,22 @@
             <li><a href='<?= $menu [4] ["href"] ?>'><?= $menu [4] ["link"] ?></a></li>
             <li><a href='<?= $menu [5] ["href"] ?>'><?= $menu [5] ["link"] ?></a></li>
     </div>
+    <div class="right">
+        <?php
+        if(isset($_COOKIE['name'])) {
+            $name = $_COOKIE['name'];
+            $menuright = array(
+                array("link" => "Вы вошли как $name", "href" => "loginfo.php"),
+                array("link" => "Выход", "href" => "logexit.php")
+            );
+        } else {
+            $menuright = array(
+                array("link" => "Регистрация", "href" => "registration.php"),
+                array("link" => "Вход", "href" => "logout.php")
+            );
+        }
+        ?>
+        <li><a href='<?= $menuright [0] ["href"] ?>'><?= $menuright [0] ["link"] ?></a></li>
+        <li><a href='<?= $menuright [1] ["href"] ?>'><?= $menuright [1] ["link"] ?></a></li>
+    </div>
 </div>
-
-
-
-
-
-
