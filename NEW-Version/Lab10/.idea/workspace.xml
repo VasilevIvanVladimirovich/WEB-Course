@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12e409f0-59ce-4d3e-97d4-87c67b20f904" name="Default Changelist" comment="" />
+    <list default="true" id="dd905311-d964-4309-aafc-0ce8721b426c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +9,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -22,36 +29,23 @@
     </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectId" id="1rCFhjcgxGJfdtLCqcdk309b2s6" />
+  <component name="ProjectId" id="1rXBlbJjYQkuFqAEIL0X4NEKkHV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="postgresql&#10;mysql" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/page-index.php" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="B:\PRoG\Git-repos\WEB-Course\NEW-Version\Lab6" />
-    </key>
-  </component>
   <component name="RunManager">
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/Header.php">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <method v="2" />
-    </configuration>
-    <configuration name="run" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/content-db.php">
+    <configuration name="Lab10" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/page-index.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP" />
@@ -63,31 +57,30 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="12e409f0-59ce-4d3e-97d4-87c67b20f904" name="Default Changelist" comment="" />
-      <created>1618472296746</created>
+      <changelist id="dd905311-d964-4309-aafc-0ce8721b426c" name="Default Changelist" comment="" />
+      <created>1619112706350</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1618472296746</updated>
-      <workItem from="1618472302283" duration="2525000" />
-      <workItem from="1618510440064" duration="3235000" />
-      <workItem from="1618516248982" duration="15202000" />
-      <workItem from="1618556783698" duration="2608000" />
-      <workItem from="1618590334373" duration="6676000" />
-      <workItem from="1618599964082" duration="493000" />
-      <workItem from="1618600676368" duration="27000" />
-      <workItem from="1618643549326" duration="3726000" />
-      <workItem from="1618647331585" duration="15406000" />
-      <workItem from="1618823203714" duration="7608000" />
-      <workItem from="1618854939180" duration="6373000" />
-      <workItem from="1618896483501" duration="706000" />
-      <workItem from="1618898158366" duration="551000" />
-      <workItem from="1618903673371" duration="23048000" />
-      <workItem from="1618987967559" duration="199000" />
-      <workItem from="1619112653012" duration="42000" />
+      <updated>1619112706350</updated>
+      <workItem from="1619112708298" duration="1132000" />
+      <workItem from="1619160377228" duration="8138000" />
+      <workItem from="1619214378290" duration="12255000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
