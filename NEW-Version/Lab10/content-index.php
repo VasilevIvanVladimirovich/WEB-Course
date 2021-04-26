@@ -52,7 +52,8 @@ if (isset($_COOKIE['name'])):
                             <tr>
                                 <td></td>
                                 <td><input type="submit" name="edit" value="Редактировать">
-                                    <input type="submit" name="del" value="удалить"><td>
+                                    <input type="submit" name="del" value="удалить">
+                                <td>
 
                             </tr>
                         </table>
@@ -79,7 +80,7 @@ $user_image = mysqli_fetch_array(mysqli_query($connect, "SELECT news_image FROM 
 
 ?>
 
-<table border="1" width="60%" align=center style="margin-bottom: 20px">
+<table border="1" width="60%" align=center style="margin-bottom: 20px;">
     <tr>
         <td><?php echo $header_news[0] ?></td>
     </tr>
@@ -96,21 +97,22 @@ $user_image = mysqli_fetch_array(mysqli_query($connect, "SELECT news_image FROM 
         <td>Комментарии:</td>
     </tr>
     <?php
-    $count_max = mysqli_fetch_array(mysqli_query($connect, "SELECT MAX(comments_id) FROM comments WHERE comment_news_id = '$i'"));
-    for ($j = $count_max[0]; $j > 0; $j--):
-        $count = mysqli_fetch_array(mysqli_query($connect, "SELECT count(*) FROM comments WHERE comments_id = '$j'"));
-        if ($count[0] == 0) continue;
-        $user_id = mysqli_fetch_array(mysqli_query($connect, "SELECT comments_user_id FROM comments WHERE comments_id = '$j'"));
-        $users_comment = mysqli_fetch_array(mysqli_query($connect, "SELECT user_name FROM users WHERE user_id = '$user_id[0]'"));
-
-        $comment_content = mysqli_fetch_array(mysqli_query($connect, "SELECT comment_content FROM comments WHERE comments_id = '$j'"));
+    $count_max = mysqli_fetch_array(mysqli_query($connect, "SELECT COUNT(comments_id) FROM comments WHERE comment_news_id = '$i'"));
+    //echo " 1)/" . $count_max[0]; //i=9
+    ///$comments_id = mysqli_fetch_array(mysqli_query($connect, "SELECT comments_id FROM comments WHERE comment_news_id = '$i'"));
+    $result = mysqli_query($connect, "SELECT comments_id FROM comments WHERE comment_news_id = '$i'");
+    while ($comments_id = mysqli_fetch_array($result)) {
+        $com_id = $comments_id['comments_id'];
+        $user_id = mysqli_fetch_array(mysqli_query($connect, "SELECT comments_user_id FROM comments WHERE comments_id = '$com_id'"));
+        $name_user = mysqli_fetch_array(mysqli_query($connect, "SELECT user_name FROM users WHERE user_id = '$user_id[0]'"));
+        $content = mysqli_fetch_array(mysqli_query($connect, "SELECT comment_content FROM comments WHERE comments_id = '$com_id'"));
         mysqli_error($connect);
         ?>
         <tr>
-            <td><?php echo $users_comment[0] ?>: <?php echo $comment_content[0] ?></td>
+            <td><?php echo $name_user[0] ?>: <?php echo $content[0] ?></td>
         </tr>
 
-    <?php endfor; ?>
+    <?php } ?>
     <form action="addcomment.php" method="post" enctype="multipart/form-data">
         <input type="hidden" name="newsid" value="<?php echo $i ?>">
         <tr>

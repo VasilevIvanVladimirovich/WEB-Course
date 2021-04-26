@@ -40,12 +40,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/page-index.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.php" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
-    <configuration name="Lab10" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/page-index.php">
+    <configuration name="Lab10" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/index.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP" />
@@ -64,7 +64,8 @@
       <updated>1619112706350</updated>
       <workItem from="1619112708298" duration="1132000" />
       <workItem from="1619160377228" duration="8138000" />
-      <workItem from="1619214378290" duration="12255000" />
+      <workItem from="1619214378290" duration="12905000" />
+      <workItem from="1619259063866" duration="9057000" />
     </task>
     <servers />
   </component>
